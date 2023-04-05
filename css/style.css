@@ -1,0 +1,40 @@
+/*GENERAL*/
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.barraNavegadora{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    list-style-type: none;
+}
+.barraNavegadora a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.barraNavegadora li{
+    padding: 10px;
+    margin: 5px;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.pie{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.pie a{
+    line-height: 1.6;
+    text-decoration: none;
+}
+body{
+    background-image:url(../img/gradiente.svg);
+}
