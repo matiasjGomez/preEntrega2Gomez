@@ -15,12 +15,18 @@
     color: whitesmoke;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    transition: 1s;
 }
 .barraNavegadora li{
     padding: 10px;
     margin: 5px;
 }
-.logo{
+.barraNavegadora a:hover{
+    font-weight: bold;
+    padding: 20px;
+    color: darkslateblue;
+}
+.logoPx{
     width: 90px;
     height: 90px;
 }
@@ -30,11 +36,35 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
 }
 .pie a{
     line-height: 1.6;
     text-decoration: none;
+    color: whitesmoke;
 }
 body{
-    background-image:url(../img/gradiente.svg);
+    background-image: linear-gradient(rgb(255, 149, 145), rgb(247, 43, 255), rgb(28, 13, 199));
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.tipografia{
+    font-family: 'Montserrat', sans-serif;
+}
+/*Index*/
+.tlIndex{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.pfIndex{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    inline-size: 1.6;
+    color: whitesmoke;
+    border: 3px solid white;
+    border-radius: 15px;
 }
