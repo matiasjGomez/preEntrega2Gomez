@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 20px;
 }
 .barraNavegadora{
     display: flex;
@@ -27,8 +28,8 @@
     color: darkslateblue;
 }
 .logoPx{
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: auto;
 }
 .pie{
     display: flex;
@@ -37,6 +38,7 @@
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
+    padding: 20px;
 }
 .pie a{
     line-height: 1.6;
@@ -54,13 +56,32 @@ body{
 .tipografia{
     font-family: 'Montserrat', sans-serif;
 }
+main {
+    padding: 20px;
+}
+@media (max-width: 768px){
+    .mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        align-items: baseline;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+    .header{grid-area: header;}
+    .main{grid-area: main;}
+    .footer{grid-area: footer;}
+}
 /*Index*/
 .tlIndex{
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 10px;
     color: whitesmoke;
 }
 .pfIndex{
-    font-size: 15px;
+    font-size: 16px;
     padding: 5px;
     margin: 5px;
     inline-size: 1.6;
@@ -68,3 +89,83 @@ body{
     border: 3px solid white;
     border-radius: 15px;
 }
+/*NOSOTROS*/
+.mainNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 2em;
+    grid-template-areas: 
+    "tlSuperior tlSuperior"
+    "imgNosotros pfPrincipal"
+    "tlInferior tlInferior"
+    "pfoInferior pfoInferior";
+}
+.tlSuperior {grid-area:tlSuperior;}
+.imgNosotros {grid-area:imgNosotros;}
+.pfPrincipal {grid-area:pfPrincipal;}
+.tlInferior {grid-area:tlInferior;}
+.pfoInferior {grid-area:pfoInferior;}
+
+.tlSuperior,
+.tlInferior {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tlNosotros {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.pfPrincipal,
+.pfoInferior {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+.pfo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+    padding: 20px;
+}
+.imgQn{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.pfoPrincipal, .imgNosotros{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+@media (max-width: 768px) {
+    .mainNosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        align-items: baseline;
+        grid-template-areas:
+        "tlSuperior"
+        "imgNosotros" 
+        "pfPrincipal"
+        "tlInferior"
+        "pfoInferior";
+    }
+.tlSuperior {grid-area:tlSuperior;}
+.imgNosotros {grid-area:imgNosotros;}
+.pfPrincipal {grid-area:pfPrincipal;}
+.tlInferior {grid-area:tlInferior;}
+.pfoInferior {grid-area:pfoInferior;}
+
+  }
