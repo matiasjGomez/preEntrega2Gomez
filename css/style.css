@@ -169,3 +169,121 @@ main {
 .pfoInferior {grid-area:pfoInferior;}
 
   }
+  /*SERVICIOS*/
+.mainServicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1px;
+    align-items: center;
+    grid-template-areas:
+    "tlprincipal tlprincipal tlprincipal tlprincipal"
+    "pPs pPs pPs pPs" 
+    "imagensA servicioA imagensB servicioB"
+    "imagensC servicioC imagensD servicioD";
+}
+.servicioA {grid-area: servicioA;
+    margin: 20px;
+}
+
+.imgServicioA {grid-area: imagensA;
+    padding-left: 80px;
+}
+
+
+.servicioB {grid-area: servicioB;
+    margin: 20px;
+}
+
+
+.imgServicioB {grid-area: imagensB;
+    padding-left: 80px;
+}
+
+
+.servicioC {grid-area: servicioC;
+    margin: 20px;
+}
+
+
+.imgServicioC {grid-area: imagensC;
+    padding-left: 80px;
+}
+
+
+.servicioD {grid-area: servicioD;
+    margin: 20px;
+}
+
+
+.imgServicioD {grid-area: imagensD;
+    padding-left: 80px;
+}
+
+.tlPrincipalS{grid-area: tlprincipal;}
+
+.pPrincipalS{grid-area: pPs;}
+
+.tlPrincipalS {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.pPrincipalS {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+
+}
+
+.tlServicios {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif
+}
+
+
+.pServi {
+    display: flex;
+    padding: 10px;
+    line-height: 1.6;
+    text-align: center;
+    color: whitesmoke;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.img-fluid-Servicio {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .mainServicios {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+}
+.imgServicioA, .imgServicioB, .imgServicioC, .imgServicioD{
+    padding-left: 0px;
+    padding: 20px;
+}
+.tlPrincipalS, .pPrincipalS{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    padding: 20px;
+}
+}
