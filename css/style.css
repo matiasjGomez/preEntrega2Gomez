@@ -74,6 +74,14 @@ main {
     .main{grid-area: main;}
     .footer{grid-area: footer;}
 }
+
+@media (max-width: 768px){
+    .barraNavegadora{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /*Index*/
 .tlIndex{
     font-size: 24px;
@@ -174,7 +182,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto;
-    gap: 1px;
+    gap: 50px;
     align-items: center;
     grid-template-areas:
     "tlprincipal tlprincipal tlprincipal tlprincipal"
@@ -183,41 +191,33 @@ main {
     "imagensC servicioC imagensD servicioD";
 }
 .servicioA {grid-area: servicioA;
-    margin: 20px;
 }
 
 .imgServicioA {grid-area: imagensA;
-    padding-left: 80px;
 }
 
 
 .servicioB {grid-area: servicioB;
-    margin: 20px;
 }
 
 
 .imgServicioB {grid-area: imagensB;
-    padding-left: 80px;
 }
 
 
 .servicioC {grid-area: servicioC;
-    margin: 20px;
 }
 
 
 .imgServicioC {grid-area: imagensC;
-    padding-left: 80px;
 }
 
 
 .servicioD {grid-area: servicioD;
-    margin: 20px;
 }
 
 
 .imgServicioD {grid-area: imagensD;
-    padding-left: 80px;
 }
 
 .tlPrincipalS{grid-area: tlprincipal;}
@@ -249,7 +249,8 @@ main {
     margin-bottom: 10px;
     margin-top: 10px;
     color: whitesmoke;
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
 }
 
 
@@ -275,15 +276,83 @@ main {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
+        padding: 0%;
 }
 .imgServicioA, .imgServicioB, .imgServicioC, .imgServicioD{
     padding-left: 0px;
-    padding: 20px;
 }
 .tlPrincipalS, .pPrincipalS{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: center;
     padding: 20px;
+}
+}
+
+/*PRODUCTOS*/
+
+.gridProdu{
+    display: grid;
+    grid-template-columns: 33%, 33%, 33%;
+    grid-template-rows: auto auto auto;
+    gap: 2em;
+    grid-template-areas: 
+    "tlprincipalpro tlprincipalpro tlprincipalpro"
+    "pA pB pC"
+    "descripcionA descripcionB descripcionC";
+}
+
+.tlprincipalPro{grid-area: tlprincipalpro;}
+.pA{grid-area: pA;}
+.pB{grid-area: pB;}
+.pC{grid-area: pC;}
+.descripcionpA{grid-area: descripcionA;}
+.descripcionpB{grid-area: descripcionB;}
+.descripcionpC{grid-area: descripcionC;}
+
+.prod, .descripcion{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.descripcionpA, .descripcionpB, .descripcionpC, .descripcionpD{
+    padding: 10px;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.marco{
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.tlprincipalPro{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.img-fluidProdu{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .gridProdu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0%;
 }
 }
