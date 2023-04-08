@@ -356,3 +356,78 @@ main {
         padding: 0%;
 }
 }
+/*CONTACTO*/
+.fontCon{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+.pfC{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+.tlC{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+.fontoption{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.gridContacto{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "tlC mapa"
+    "parrafoCon mapa"
+    "form mapa";
+}
+.tlC{grid-area: tlC;}
+.pfCprincipal {grid-area: parrafoCon;}
+.gridform{grid-area: form;}
+.mapa {grid-area: mapa;}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .gridContacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "tlc"
+        "parrafoCon"
+        "form"
+        "mapa";
+}
+.tlC{grid-area: tlC;}
+.pfCprincipal {grid-area: parrafoCon;}
+.gridform{grid-area: form;}
+.mapa {grid-area: mapa;}
+iframe{
+    width: auto;
+    height: auto;
+}
+.texto{
+    width: 100%;
+    height: auto;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
