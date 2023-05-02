@@ -87,6 +87,8 @@ main {
     font-size: 24px;
     margin-bottom: 10px;
     color: whitesmoke;
+    display: flex;
+    justify-content: center;
 }
 .pfIndex{
     font-size: 16px;
@@ -94,8 +96,6 @@ main {
     margin: 5px;
     inline-size: 1.6;
     color: whitesmoke;
-    border: 3px solid white;
-    border-radius: 15px;
 }
 /*NOSOTROS*/
 .mainNosotros {
@@ -120,10 +120,11 @@ main {
     display: flex;
     margin-bottom: 10px;
     margin-top: 10px;
+    justify-content: center;
 }
 .tlNosotros {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: bold;
     font-size: 24px;
     text-transform: uppercase;
     color: whitesmoke;
@@ -134,8 +135,6 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    border: 3px solid white;
-    border-radius: 15px;
 }
 .pfo {
     font-family: 'Montserrat', sans-serif;
@@ -260,8 +259,6 @@ main {
     line-height: 1.6;
     text-align: center;
     color: whitesmoke;
-    border: 3px solid white;
-    border-radius: 15px;
 }
 
 .img-fluid-Servicio {
@@ -332,6 +329,11 @@ main {
     padding: 20px;
     max-width: 400px;
 }
+
+.marco:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
 
 .tlprincipalPro{
     font-family: 'Montserrat', sans-serif;
